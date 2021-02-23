@@ -122,6 +122,9 @@ This scenario involves a Farm, Processor, and Importer in the supply chain. The 
 5.	Ship – The shrimp is sold to an Italian importer and shipped to them.
 6.	Receive – The Italian Importer receives the shrimp.
 
+#### Example XML
+There is example XML for this scenario in the Group 1 folder of this GitHub. This XML can be uploaded to the IT-Co Mapping tool to visualize the event data.
+
 ### Group 2 - Wild Caught Tuna
 *OpenSC, GoChain, and Plumensoft*
 
@@ -140,4 +143,5 @@ This scenario involves a Vessel, Tuna Distributor, and Processor. The event orde
 6.	Ship – The tuna is sold back to the Tuna Distributor and shipped to them.
 7.	Receive – The tuna is received by the Tuna Distributor.
 
-
+#### Example XML
+There is example XML for this scenario in the Group 2 folder of this GitHub. This XML can be uploaded to the IT-Co Mapping tool to visualize the event data.
