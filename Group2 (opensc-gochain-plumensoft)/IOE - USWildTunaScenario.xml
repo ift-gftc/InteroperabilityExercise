@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<epcis:EPCISDocument
+    xmlns:epcis="urn:epcglobal:epcis:xsd:1"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:sbdh="http://www.unece.org/cefact/namespaces/StandardBusinessDocumentHeader"
+    xmlns:cbvmda="urn:epcglobal:cbv:mda"
+    xmlns:gdst="https://traceability-dialogue.org/epcis" schemaVersion="0" creationDate="2001-12-17T09:30:47Z" xsi:schemaLocation="urn:epcglobal:epcis:xsd:1  http://www.gs1si.org/BMS/epcis/1_2/EPCglobal-epcis-1_2.xsd">
+    <EPCISHeader>
+        <sbdh:StandardBusinessDocumentHeader>
+            <sbdh:HeaderVersion>1.0</sbdh:HeaderVersion>
+            <sbdh:Sender>
+                <sbdh:Identifier>test</sbdh:Identifier>
+                <sbdh:ContactInformation>
+                    <sbdh:Contact>test</sbdh:Contact>
+                    <sbdh:EmailAddress>test@test.com</sbdh:EmailAddress>
+                </sbdh:ContactInformation>
+            </sbdh:Sender>
+            <sbdh:Receiver>
+                <sbdh:Identifier>test</sbdh:Identifier>
+                <sbdh:ContactInformation>
+                    <sbdh:Contact>test</sbdh:Contact>
+                    <sbdh:EmailAddress>test@test.com</sbdh:EmailAddress>
+                </sbdh:ContactInformation>
+            </sbdh:Receiver>
+            <sbdh:DocumentIdentification>
+                <sbdh:Standard>GS1</sbdh:Standard>
+                <sbdh:TypeVersion>3.0</sbdh:TypeVersion>
+                <sbdh:InstanceIdentifier>9999</sbdh:InstanceIdentifier>
+                <sbdh:Type>Seafood Traceability</sbdh:Type>
+                <sbdh:MultipleType>false</sbdh:MultipleType>
+                <sbdh:CreationDateAndTime>2020-10-01T12:02:51.351-06:00</sbdh:CreationDateAndTime>
+            </sbdh:DocumentIdentification>
+        </sbdh:StandardBusinessDocumentHeader>
+        <extension>
+            <EPCISMasterData>
+                <VocabularyList>
+                    <Vocabulary type="urn:epcglobal:epcis:vtype:EPCClass">
+                        <VocabularyElementList>
+                            <VocabularyElement id="urn:gdst:example.org:product:class:gdst.com.100">
+                                <attribute id="urn:epcglobal:cbv:mda#descriptionShort">Whole Tuna</attribute>
+                                <attribute id="urn:epcglobal:cbv:mda#speciesForFisheryStatisticsPurposesName">YFT</attribute>
+                                <attribute id="urn:epcglobal:cbv:mda#additionalTradeItemIdentification">WHL</attribute>
+                            </VocabularyElement>
+                            <VocabularyElement id="urn:gdst:example.org:product:class:gdst.com.101">
+                                <attribute id="urn:epcglobal:cbv:mda#descriptionShort">Frozen Tuna Fillet</attribute>
+                                <attribute id="urn:epcglobal:cbv:mda#speciesForFisheryStatisticsPurposesName">YFT</attribute>
+                                <attribute id="urn:epcglobal:cbv:mda#additionalTradeItemIdentification">FIL</attribute>
+                            </VocabularyElement>
+                            <VocabularyElement id="urn:gdst:example.org:product:class:gdst.com.102">
+                                <attribute id="urn:epcglobal:cbv:mda#descriptionShort">Case of Tuna Cans</attribute>
+                                <attribute id="urn:epcglobal:cbv:mda#speciesForFisheryStatisticsPurposesName">YFT</attribute>
+                                <attribute id="urn:epcglobal:cbv:mda#additionalTradeItemIdentification">OTH</attribute>
+                            </VocabularyElement>
+                        </VocabularyElementList>
+                    </Vocabulary>
+                    <Vocabulary type="urn:epcglobal:epcis:vtype:Location">
+                        <VocabularyElementList>
+                            <VocabularyElement id="urn:gdst:example.org:location:loc:gdst.com.103">
+                                <attribute id="urn:epcglobal:cbv:mda#name">Fishing Vessel</attribute>
+                                <attribute id="urn:epcglobal:cbv:mda#vesselID">VESSELID_100</attribute>
+                                <attribute id="urn:epcglobal:cbv:mda#imoNumber">IMO0987654</attribute>
+                                <attribute id="urn:epcglobal:cbv:mda#vesselFlagState">US</attribute>
+                            </VocabularyElement>
+                            <VocabularyElement id="urn:gdst:example.org:location:loc:gdst.com.104">
+                                <attribute id="urn:epcglobal:cbv:mda#name">Port of San Diego</attribute>
+                                <attribute id="urn:epcglobal:cbv:mda#city">San Diego</attribute>
+                                <attribute id="urn:epcglobal:cbv:mda#state">CA</attribute>
+                                <attribute id="urn:epcglobal:cbv:mda#countryCode">US</attribute>
+                            </VocabularyElement>
+                            <VocabularyElement id="urn:gdst:example.org:location:loc:gdst.com.105">
+                                <attribute id="urn:epcglobal:cbv:mda#name">Thai Processing Plant</attribute>
+                                <attribute id="urn:epcglobal:cbv:mda#countryCode">TH</attribute>
+                            </VocabularyElement>
+                            <VocabularyElement id="urn:gdst:example.org:location:loc:gdst.com.106">
+                                <attribute id="urn:epcglobal:cbv:mda#name">Tuna Co. Warehouse</attribute>
+                                <attribute id="urn:epcglobal:cbv:mda#city">San Diego</attribute>
+                                <attribute id="urn:epcglobal:cbv:mda#countryCode">CA</attribute>
+                            </VocabularyElement>
+                        </VocabularyElementList>
+                    </Vocabulary>
+                    <Vocabulary type="urn:epcglobal:epcis:vtype:TradingParty">
+                        <VocabularyElementList>
+                            <VocabularyElement id="urn:gdst:example.org:location:loc:gdst.com.100">
+                                <attribute id="urn:epcglobal:cbv:mda#name">Fisherman</attribute>
+                            </VocabularyElement>
+                            <VocabularyElement id="urn:gdst:example.org:location:loc:gdst.com.101">
+                                <attribute id="urn:epcglobal:cbv:mda#name">San Diego Tuna Co.</attribute>
+                            </VocabularyElement>
+                            <VocabularyElement id="urn:gdst:example.org:location:loc:gdst.com.102">
+                                <attribute id="urn:epcglobal:cbv:mda#name">Thai Processing LTD</attribute>
+                            </VocabularyElement>
+                        </VocabularyElementList>
+                    </Vocabulary>
+                </VocabularyList>
+            </EPCISMasterData>
+        </extension>
+    </EPCISHeader>
+    <EPCISBody>
+        <EventList>
+            <ObjectEvent>
+                <eventTime>2020-10-01T14:00:00.000Z</eventTime>
+                <eventTimeZoneOffset/>
+                <baseExtension>
+                    <eventID>7778b85b-9590-4390-bd09-3db3a61e3cb0</eventID>
+                </baseExtension>
+                <action>ADD</action>
+                <bizStep>urn:gdst:bizStep:fishingEvent</bizStep>
+                <disposition>urn:epcglobal:cbv:disp:active</disposition>
+                <readPoint>
+                    <id/>
+                </readPoint>
+                <bizLocation>
+                    <id>urn:gdst:example.org:location:loc:gdst.com.103</id>
+                </bizLocation>
+                <extension>
+                    <quantityList>
+                        <quantityElement>
+                            <epcClass>urn:gdst:example.org:product:lot:class:gdst.com.100.WHOLE123</epcClass>
+                            <quantity>1000</quantity>
+                            <uom>KGM</uom>
+                        </quantityElement>
+                    </quantityList>
+                    <sourceList>
+                        <source type="urn:epcglobal:cbv:sdt: "></source>
+                    </sourceList>
+                    <destinationList>
+                        <destination type="urn:epcglobal:cbv:sdt:owning_party">urn:gdst:example.org:location:loc:gdst.com.100</destination>
+                    </destinationList>
+                    <ilmd>
+                        <cbvmda:vesselCatchInformationList>
+                            <cbvmda:vesselCatchInformation>
+                                <cbvmda:vesselName>Fishing Vessel</cbvmda:vesselName>
+                                <cbvmda:vesselID>VESSELID_100</cbvmda:vesselID>
+                                <gdst:imoNumber>IMO0987654</gdst:imoNumber>
+                                <cbvmda:vesselFlagState>US</cbvmda:vesselFlagState>
+                                <gdst:vesselPublicRegistry>TEST_DATA</gdst:vesselPublicRegistry>
+                                <gdst:gpsAvailability>true</gdst:gpsAvailability>
+                                <gdst:satelliteTrackingAuthority>TEST_DATA</gdst:satelliteTrackingAuthority>
+                                <cbvmda:economicZone>TEST_DATA</cbvmda:economicZone>
+                                <gdst:fisheryImprovementProject>TEST_DATA</gdst:fisheryImprovementProject>
+                                <gdst:rmfoArea>TEST_DATA</gdst:rmfoArea>
+                                <gdst:subnationalPermitArea>TEST_DATA</gdst:subnationalPermitArea>
+                                <cbvmda:catchArea>FAO 67</cbvmda:catchArea>
+                                <cbvmda:fishingGearTypeCode>9</cbvmda:fishingGearTypeCode>
+                            </cbvmda:vesselCatchInformation>
+                        </cbvmda:vesselCatchInformationList>
+                        <cbvmda:harvestEndDate>Thu Oct 01 2020 00:00:00 GMT-0600 (Mountain Daylight Time)</cbvmda:harvestEndDate>
+                        <cbvmda:harvestStartDate>Thu Oct 01 2020 00:00:00 GMT-0600 (Mountain Daylight Time)</cbvmda:harvestStartDate>
+                        <cbvmda:certificationList>
+                            <cbvmda:certification>
+                                <gdst:certificateType>urn:gdst:cert:fishingAuth</gdst:certificateType>
+                                <cbvmda:certificationStandard>TEST_DATA</cbvmda:certificationStandard>
+                                <cbvmda:certificationAgency>TEST_DATA</cbvmda:certificationAgency>
+                                <cbvmda:certificationValue>TEST_DATA</cbvmda:certificationValue>
+                                <cbvmda:certificationIdentification>TEST_DATA</cbvmda:certificationIdentification>
+                            </cbvmda:certification>
+                            <cbvmda:certification>
+                                <gdst:certificateType>urn:gdst:cert:harvestCert</gdst:certificateType>
+                                <cbvmda:certificationStandard>TEST_DATA</cbvmda:certificationStandard>
+                                <cbvmda:certificationAgency>TEST_DATA</cbvmda:certificationAgency>
+                                <cbvmda:certificationValue>TEST_DATA</cbvmda:certificationValue>
+                                <cbvmda:certificationIdentification>TEST_DATA</cbvmda:certificationIdentification>
+                            </cbvmda:certification>
+                            <cbvmda:certification>
+                                <gdst:certificateType>urn:gdst:cert:humanPolicy</gdst:certificateType>
+                                <cbvmda:certificationStandard>TEST_DATA</cbvmda:certificationStandard>
+                                <cbvmda:certificationAgency>TEST_DATA</cbvmda:certificationAgency>
+                                <cbvmda:certificationValue>TEST_DATA</cbvmda:certificationValue>
+                                <cbvmda:certificationIdentification>TEST_DATA</cbvmda:certificationIdentification>
+                            </cbvmda:certification>
+                        </cbvmda:certificationList>
+                    </ilmd>
+                </extension>
+                <gdst:humanWelfarePolicy>TEST_DATA</gdst:humanWelfarePolicy>
+                <gdst:productOwner>urn:gdst:example.org:location:loc:gdst.com.100</gdst:productOwner>
+                <cbvmda:informationProvider>urn:gdst:example.org:location:loc:gdst.com.100</cbvmda:informationProvider>
+            </ObjectEvent>
+            <ObjectEvent>
+                <eventTime>2020-10-01T20:00:00.000Z</eventTime>
+                <eventTimeZoneOffset/>
+                <baseExtension>
+                    <eventID>1bfc8af0-ecfa-4c43-a09b-d14a2f45f722</eventID>
+                </baseExtension>
+                <action>OBSERVE</action>
+                <bizStep>urn:gdst:bizStep:landing</bizStep>
+                <disposition>urn:epcglobal:cbv:disp:active</disposition>
+                <readPoint>
+                    <id>geo:11,12</id>
+                </readPoint>
+                <bizLocation>
+                    <id>urn:gdst:example.org:location:loc:gdst.com.104</id>
+                </bizLocation>
+                <gdst:certificationList>
+                    <cbvmda:certification>
+                        <gdst:certificateType>urn:gdst:cert:landingAuth</gdst:certificateType>
+                        <cbvmda:certificationStandard>TEST_DATA</cbvmda:certificationStandard>
+                        <cbvmda:certificationAgency>TEST_DATA</cbvmda:certificationAgency>
+                        <cbvmda:certificationValue>TEST_DATA</cbvmda:certificationValue>
+                        <cbvmda:certificationIdentification>TEST_DATA</cbvmda:certificationIdentification>
+                    </cbvmda:certification>
+                    <cbvmda:certification>
+                        <gdst:certificateType>urn:gdst:cert:humanPolicy</gdst:certificateType>
+                        <cbvmda:certificationStandard>TEST_DATA</cbvmda:certificationStandard>
+                        <cbvmda:certificationAgency>TEST_DATA</cbvmda:certificationAgency>
+                        <cbvmda:certificationValue>TEST_DATA</cbvmda:certificationValue>
+                        <cbvmda:certificationIdentification>TEST_DATA</cbvmda:certificationIdentification>
+                    </cbvmda:certification>
+                </gdst:certificationList>
+                <cbvmda:landingEndDate>Thu Oct 01 2020 00:00:00 GMT-0600 (Mountain Daylight Time)</cbvmda:landingEndDate>
+                <cbvmda:landingStartDate>Thu Oct 01 2020 00:00:00 GMT-0600 (Mountain Daylight Time)</cbvmda:landingStartDate>
+                <cbvmda:unloadingPort>SDP</cbvmda:unloadingPort>
+                <extension>
+                    <quantityList>
+                        <quantityElement>
+                            <epcClass>urn:gdst:example.org:product:lot:class:gdst.com.101.FILLET123</epcClass>
+                            <quantity>1000</quantity>
+                            <uom>KGM</uom>
+                        </quantityElement>
+                    </quantityList>
+                    <sourceList>
+                        <source type="urn:epcglobal:cbv:sdt:owning_party">urn:gdst:example.org:location:loc:gdst.com.100</source>
+                    </sourceList>
+                    <destinationList>
+                        <destination type="urn:epcglobal:cbv:sdt:owning_party">urn:gdst:example.org:location:loc:gdst.com.101</destination>
+                    </destinationList>
+                </extension>
+                <gdst:humanWelfarePolicy>TEST_DATA</gdst:humanWelfarePolicy>
+                <gdst:productOwner>urn:gdst:example.org:location:loc:gdst.com.101</gdst:productOwner>
+                <cbvmda:informationProvider>urn:gdst:example.org:location:loc:gdst.com.101</cbvmda:informationProvider>
+            </ObjectEvent>
+            <ObjectEvent>
+                <eventTime>2020-10-02T17:54:35.101Z</eventTime>
+                <eventTimeZoneOffset/>
+                <baseExtension>
+                    <eventID>63267dad-1e9a-4779-8740-64968105e4f1</eventID>
+                </baseExtension>
+                <action>OBSERVE</action>
+                <bizStep>urn:epcglobal:cbv:bizstep:shipping</bizStep>
+                <disposition>urn:epcglobal:cbv:disp:active</disposition>
+                <readPoint>
+                    <id/>
+                </readPoint>
+                <bizLocation>
+                    <id>urn:gdst:example.org:location:loc:gdst.com.104</id>
+                </bizLocation>
+                <gdst:certificationList>
+                    <cbvmda:certification>
+                        <gdst:certificateType>urn:gdst:cert:harvestCoC</gdst:certificateType>
+                        <cbvmda:certificationStandard>TEST_DATA</cbvmda:certificationStandard>
+                        <cbvmda:certificationAgency>TEST_DATA</cbvmda:certificationAgency>
+                        <cbvmda:certificationValue>TEST_DATA</cbvmda:certificationValue>
+                        <cbvmda:certificationIdentification>TEST_DATA</cbvmda:certificationIdentification>
+                    </cbvmda:certification>
+                </gdst:certificationList>
+                <extension>
+                    <quantityList>
+                        <quantityElement>
+                            <epcClass>urn:gdst:example.org:product:lot:class:gdst.com.101.FILLET123</epcClass>
+                            <quantity>1000</quantity>
+                            <uom>KGM</uom>
+                        </quantityElement>
+                    </quantityList>
+                    <sourceList>
+                        <source type="urn:epcglobal:cbv:sdt: "></source>
+                    </sourceList>
+                    <destinationList>
+                        <destination type="urn:epcglobal:cbv:sdt: "></destination>
+                    </destinationList>
+                </extension>
+                <gdst:productOwner>urn:gdst:example.org:location:loc:gdst.com.101</gdst:productOwner>
+                <cbvmda:informationProvider>urn:gdst:example.org:location:loc:gdst.com.101</cbvmda:informationProvider>
+            </ObjectEvent>
+            <ObjectEvent>
+                <eventTime>2020-10-15T17:54:36.535Z</eventTime>
+                <eventTimeZoneOffset/>
+                <baseExtension>
+                    <eventID>641c5df6-dca2-4961-b1fe-ec8cbff7f511</eventID>
+                </baseExtension>
+                <action>OBSERVE</action>
+                <bizStep>urn:epcglobal:cbv:bizstep:receiving</bizStep>
+                <disposition>urn:epcglobal:cbv:disp:active</disposition>
+                <readPoint>
+                    <id/>
+                </readPoint>
+                <bizLocation>
+                    <id>urn:gdst:example.org:location:loc:gdst.com.105</id>
+                </bizLocation>
+                <gdst:certificationList>
+                    <cbvmda:certification>
+                        <gdst:certificateType>urn:gdst:cert:harvestCoC</gdst:certificateType>
+                        <cbvmda:certificationStandard>TEST_DATA</cbvmda:certificationStandard>
+                        <cbvmda:certificationAgency>TEST_DATA</cbvmda:certificationAgency>
+                        <cbvmda:certificationValue>TEST_DATA</cbvmda:certificationValue>
+                        <cbvmda:certificationIdentification>TEST_DATA</cbvmda:certificationIdentification>
+                    </cbvmda:certification>
+                </gdst:certificationList>
+                <extension>
+                    <quantityList>
+                        <quantityElement>
+                            <epcClass>urn:gdst:example.org:product:lot:class:gdst.com.101.FILLET123</epcClass>
+                            <quantity>1000</quantity>
+                            <uom>KGM</uom>
+                        </quantityElement>
+                    </quantityList>
+                    <sourceList>
+                        <source type="urn:epcglobal:cbv:sdt: "></source>
+                    </sourceList>
+                    <destinationList>
+                        <destination type="urn:epcglobal:cbv:sdt:owning_party">urn:gdst:example.org:location:loc:gdst.com.102</destination>
+                    </destinationList>
+                </extension>
+                <gdst:productOwner>urn:gdst:example.org:location:loc:gdst.com.102</gdst:productOwner>
+                <cbvmda:informationProvider>urn:gdst:example.org:location:loc:gdst.com.102</cbvmda:informationProvider>
+            </ObjectEvent>
+            <ObjectEvent>
+                <eventTime>2020-10-20T17:54:43.516Z</eventTime>
+                <eventTimeZoneOffset/>
+                <baseExtension>
+                    <eventID>f6de2795-5194-4df8-b821-ffc14f553107</eventID>
+                </baseExtension>
+                <action>OBSERVE</action>
+                <bizStep>urn:epcglobal:cbv:bizstep:shipping</bizStep>
+                <disposition>urn:epcglobal:cbv:disp:active</disposition>
+                <readPoint>
+                    <id/>
+                </readPoint>
+                <bizLocation>
+                    <id>urn:gdst:example.org:location:loc:gdst.com.105</id>
+                </bizLocation>
+                <gdst:certificationList>
+                    <cbvmda:certification>
+                        <gdst:certificateType>urn:gdst:cert:harvestCoC</gdst:certificateType>
+                        <cbvmda:certificationStandard>TEST_DATA</cbvmda:certificationStandard>
+                        <cbvmda:certificationAgency>TEST_DATA</cbvmda:certificationAgency>
+                        <cbvmda:certificationValue>TEST_DATA</cbvmda:certificationValue>
+                        <cbvmda:certificationIdentification>TEST_DATA</cbvmda:certificationIdentification>
+                    </cbvmda:certification>
+                </gdst:certificationList>
+                <extension>
+                    <quantityList>
+                        <quantityElement>
+                            <epcClass>urn:gdst:example.org:product:lot:class:gdst.com.102.CAN123</epcClass>
+                            <quantity>1000</quantity>
+                            <uom>KGM</uom>
+                        </quantityElement>
+                    </quantityList>
+                    <sourceList>
+                        <source type="urn:epcglobal:cbv:sdt: "></source>
+                    </sourceList>
+                    <destinationList>
+                        <destination type="urn:epcglobal:cbv:sdt: "></destination>
+                    </destinationList>
+                </extension>
+                <gdst:productOwner>urn:gdst:example.org:location:loc:gdst.com.102</gdst:productOwner>
+                <cbvmda:informationProvider>urn:gdst:example.org:location:loc:gdst.com.102</cbvmda:informationProvider>
+            </ObjectEvent>
+            <ObjectEvent>
+                <eventTime>2020-10-31T17:54:45.164Z</eventTime>
+                <eventTimeZoneOffset/>
+                <baseExtension>
+                    <eventID>c81d700f-aba8-48e5-b9ca-25ac99206c59</eventID>
+                </baseExtension>
+                <action>OBSERVE</action>
+                <bizStep>urn:epcglobal:cbv:bizstep:receiving</bizStep>
+                <disposition>urn:epcglobal:cbv:disp:active</disposition>
+                <readPoint>
+                    <id/>
+                </readPoint>
+                <bizLocation>
+                    <id>urn:gdst:example.org:location:loc:gdst.com.106</id>
+                </bizLocation>
+                <gdst:certificationList>
+                    <cbvmda:certification>
+                        <gdst:certificateType>urn:gdst:cert:harvestCoC</gdst:certificateType>
+                        <cbvmda:certificationStandard>TEST_DATA</cbvmda:certificationStandard>
+                        <cbvmda:certificationAgency>TEST_DATA</cbvmda:certificationAgency>
+                        <cbvmda:certificationValue>TEST_DATA</cbvmda:certificationValue>
+                        <cbvmda:certificationIdentification>TEST_DATA</cbvmda:certificationIdentification>
+                    </cbvmda:certification>
+                </gdst:certificationList>
+                <extension>
+                    <quantityList>
+                        <quantityElement>
+                            <epcClass>urn:gdst:example.org:product:lot:class:gdst.com.102.CAN123</epcClass>
+                            <quantity>1000</quantity>
+                            <uom>KGM</uom>
+                        </quantityElement>
+                    </quantityList>
+                    <sourceList>
+                        <source type="urn:epcglobal:cbv:sdt:owning_party">urn:gdst:example.org:location:loc:gdst.com.102</source>
+                    </sourceList>
+                    <destinationList>
+                        <destination type="urn:epcglobal:cbv:sdt:owning_party">urn:gdst:example.org:location:loc:gdst.com.101</destination>
+                    </destinationList>
+                </extension>
+                <gdst:productOwner>urn:gdst:example.org:location:loc:gdst.com.101</gdst:productOwner>
+                <cbvmda:informationProvider>urn:gdst:example.org:location:loc:gdst.com.101</cbvmda:informationProvider>
+            </ObjectEvent>
+            <extension>
+                <TransformationEvent>
+                    <eventTime>2020-10-01T15:00:00.000Z</eventTime>
+                    <eventTimeZoneOffset/>
+                    <baseExtension>
+                        <eventID>72413ae0-e038-4c80-aa90-0681cc6f9e69</eventID>
+                    </baseExtension>
+                    <bizStep>urn:epcglobal:cbv:bizstep:commissioning</bizStep>
+                    <disposition>urn:epcglobal:cbv:disp:active</disposition>
+                    <readPoint>
+                        <id/>
+                    </readPoint>
+                    <bizLocation>
+                        <id>urn:gdst:example.org:location:loc:gdst.com.103</id>
+                    </bizLocation>
+                    <inputQuantityList>
+                        <quantityElement>
+                            <epcClass>urn:gdst:example.org:product:lot:class:gdst.com.100.WHOLE123</epcClass>
+                            <quantity>1000</quantity>
+                            <uom>KGM</uom>
+                        </quantityElement>
+                    </inputQuantityList>
+                    <outputQuantityList>
+                        <quantityElement>
+                            <epcClass>urn:gdst:example.org:product:lot:class:gdst.com.101.FILLET123</epcClass>
+                            <quantity>1000</quantity>
+                            <uom>KGM</uom>
+                        </quantityElement>
+                    </outputQuantityList>
+                    <ilmd>
+                        <cbvmda:productionDate>Thu Oct 01 2020 00:00:00 GMT-0600 (Mountain Daylight Time)</cbvmda:productionDate>
+                        <cbvmda:itemExpirationDate>Sat Oct 01 2022 00:00:00 GMT-0600 (Mountain Daylight Time)</cbvmda:itemExpirationDate>
+                        <cbvmda:countryOfOrigin>US</cbvmda:countryOfOrigin>
+                        <cbvmda:certificationList>
+                            <cbvmda:certification>
+                                <gdst:certificateType>urn:gdst:cert:harvestCoC</gdst:certificateType>
+                                <cbvmda:certificationStandard>TEST_DATA</cbvmda:certificationStandard>
+                                <cbvmda:certificationAgency>TEST_DATA</cbvmda:certificationAgency>
+                                <cbvmda:certificationValue>TEST_DATA</cbvmda:certificationValue>
+                                <cbvmda:certificationIdentification>TEST_DATA</cbvmda:certificationIdentification>
+                            </cbvmda:certification>
+                            <cbvmda:certification>
+                                <gdst:certificateType>urn:gdst:cert:processorLicense</gdst:certificateType>
+                                <cbvmda:certificationStandard>TEST_DATA</cbvmda:certificationStandard>
+                                <cbvmda:certificationAgency>TEST_DATA</cbvmda:certificationAgency>
+                                <cbvmda:certificationValue>TEST_DATA</cbvmda:certificationValue>
+                                <cbvmda:certificationIdentification>TEST_DATA</cbvmda:certificationIdentification>
+                            </cbvmda:certification>
+                            <cbvmda:certification>
+                                <gdst:certificateType>urn:gdst:cert:humanPolicy</gdst:certificateType>
+                                <cbvmda:certificationStandard>TEST_DATA</cbvmda:certificationStandard>
+                                <cbvmda:certificationAgency>TEST_DATA</cbvmda:certificationAgency>
+                                <cbvmda:certificationValue>TEST_DATA</cbvmda:certificationValue>
+                                <cbvmda:certificationIdentification>TEST_DATA</cbvmda:certificationIdentification>
+                            </cbvmda:certification>
+                        </cbvmda:certificationList>
+                    </ilmd>
+                    <gdst:humanWelfarePolicy>TEST_DATA</gdst:humanWelfarePolicy>
+                    <gdst:productOwner>urn:gdst:example.org:location:loc:gdst.com.100</gdst:productOwner>
+                    <cbvmda:informationProvider>urn:gdst:example.org:location:loc:gdst.com.100</cbvmda:informationProvider>
+                </TransformationEvent>
+            </extension>
+            <extension>
+                <TransformationEvent>
+                    <eventTime>2020-10-17T17:54:38.370Z</eventTime>
+                    <eventTimeZoneOffset/>
+                    <baseExtension>
+                        <eventID>1ae14610-e50c-4459-9220-bf95de28c21f</eventID>
+                    </baseExtension>
+                    <bizStep>urn:epcglobal:cbv:bizstep:commissioning</bizStep>
+                    <disposition>urn:epcglobal:cbv:disp:active</disposition>
+                    <readPoint>
+                        <id/>
+                    </readPoint>
+                    <bizLocation>
+                        <id>urn:gdst:example.org:location:loc:gdst.com.105</id>
+                    </bizLocation>
+                    <inputQuantityList>
+                        <quantityElement>
+                            <epcClass>urn:gdst:example.org:product:lot:class:gdst.com.101.FILLET123</epcClass>
+                            <quantity>1000</quantity>
+                            <uom>KGM</uom>
+                        </quantityElement>
+                    </inputQuantityList>
+                    <outputQuantityList>
+                        <quantityElement>
+                            <epcClass>urn:gdst:example.org:product:lot:class:gdst.com.102.CAN123</epcClass>
+                            <quantity>1000</quantity>
+                            <uom>KGM</uom>
+                        </quantityElement>
+                    </outputQuantityList>
+                    <ilmd>
+                        <cbvmda:productionDate>Sat Oct 17 2020 00:00:00 GMT-0600 (Mountain Daylight Time)</cbvmda:productionDate>
+                        <cbvmda:itemExpirationDate>Mon Oct 17 2022 00:00:00 GMT-0600 (Mountain Daylight Time)</cbvmda:itemExpirationDate>
+                        <cbvmda:countryOfOrigin>US</cbvmda:countryOfOrigin>
+                        <cbvmda:certificationList>
+                            <cbvmda:certification>
+                                <gdst:certificateType>urn:gdst:cert:harvestCoC</gdst:certificateType>
+                                <cbvmda:certificationStandard>TEST_DATA</cbvmda:certificationStandard>
+                                <cbvmda:certificationAgency>TEST_DATA</cbvmda:certificationAgency>
+                                <cbvmda:certificationValue>TEST_DATA</cbvmda:certificationValue>
+                                <cbvmda:certificationIdentification>TEST_DATA</cbvmda:certificationIdentification>
+                            </cbvmda:certification>
+                            <cbvmda:certification>
+                                <gdst:certificateType>urn:gdst:cert:processorLicense</gdst:certificateType>
+                                <cbvmda:certificationStandard>TEST_DATA</cbvmda:certificationStandard>
+                                <cbvmda:certificationAgency>TEST_DATA</cbvmda:certificationAgency>
+                                <cbvmda:certificationValue>TEST_DATA</cbvmda:certificationValue>
+                                <cbvmda:certificationIdentification>TEST_DATA</cbvmda:certificationIdentification>
+                            </cbvmda:certification>
+                            <cbvmda:certification>
+                                <gdst:certificateType>urn:gdst:cert:humanPolicy</gdst:certificateType>
+                                <cbvmda:certificationStandard>TEST_DATA</cbvmda:certificationStandard>
+                                <cbvmda:certificationAgency>TEST_DATA</cbvmda:certificationAgency>
+                                <cbvmda:certificationValue>TEST_DATA</cbvmda:certificationValue>
+                                <cbvmda:certificationIdentification>TEST_DATA</cbvmda:certificationIdentification>
+                            </cbvmda:certification>
+                        </cbvmda:certificationList>
+                    </ilmd>
+                    <gdst:humanWelfarePolicy>TEST_DATA</gdst:humanWelfarePolicy>
+                    <gdst:productOwner>urn:gdst:example.org:location:loc:gdst.com.102</gdst:productOwner>
+                    <cbvmda:informationProvider>urn:gdst:example.org:location:loc:gdst.com.102</cbvmda:informationProvider>
+                </TransformationEvent>
+            </extension>
+        </EventList>
+    </EPCISBody>
+</epcis:EPCISDocument>
