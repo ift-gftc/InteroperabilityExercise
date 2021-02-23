@@ -29,9 +29,9 @@ The event will follow a 4-day schedule with a total combined time of 14 hours.
 *1 hour commitment.*
 - 15 minutes of introductions
 - 40 minute presentation discussing the GDST 1.0 standards, tools, and the supply chain scenarios.
--	15 minutes introducing the standards and event – Thomas
+-	15 minutes introducing the standards and event 
 -	5-10 minutes for questions
--	
+
 Instructions for groups:
 1.	Familiarize with the tools, sample data, scenarios, and communication streams
 2.	Early Day 1 have joint meeting: contact info between groups, scenario planning
