@@ -73,6 +73,8 @@ This would be the final day in which each group would be given 15 minutes to pre
 -	Difficulties
 -	Screenshots/demo/resulting data
 
+## [Please Upload Presentation by the Start of the Conclusionary Call (Friday 12PM CST)](https://www.dropbox.com/sh/ro7w0mtc4m957xh/AAD-NcxJ8rCjLmw4QObpy-Tna?dl=0)
+
 ## What is GDST interested in learning from this?
 We are very excited to see solution providers try to interoperate. Some questions we are looking to answer are:
 1. Is there any static data that we need to standardize?
