@@ -77,5 +77,60 @@ This would be the final day in which each group would be given 15 minutes to pre
 ## Communication Channels
 We have gone ahead and setup both a Discord and a Slack channel available to be used by the groups. However, it is up to each team to determine which communication channels will work best for them.
 
-**Discord**
+### Discord
+https://discord.gg/QaWFMEa6
+
+*Discord is great since it has built-in voice channels.*
+
+### Slack
+**Group 1:** https://gdst-workspace.slack.com/archives/C01NSKVA230
+
+**Group 2:** https://gdst-workspace.slack.com/archives/C01NSKW29AS
+
+## Resources
+- [Core Normative Standard](http://traceability-dialogue.org/wp-content/uploads/2020/03/2020.03.11_GDST1.0CoreNormativeStandardsfinalMAR13.pdf)
+- [Technical Implementation Guide](http://traceability-dialogue.org/wp-content/uploads/2020/03/2020.03.11_GDST1.0TechnicalImplementationGuidancefinalMAR13.pdf)
+- [Developer Documentation](https://developer.traceability-dialogue.org/)
+- [Developer GitHub](https://github.com/ift-gftc/doc.gdst)
+- [Trawler Rest API GitHub](https://github.com/DuckScapePhilip/TrawlerAPI)
+- [Trawler Source Code](https://github.com/ift-gftc/gftcms/tree/master/packages/trawler)
+- [IT Co-Mapping Tool](https://ift-gftc.github.io/IT-Conversion-Mapping-Tool/)
+
+## Scenarios
+
+### Group 1 - Farmed Shrimp
+*WholeChain and Trace Register*
+
+This is scenario that will follow shrimp being harvested from a farm in Ecuador. Then that shrimp will be sold to a processing plant in Ecuador, and finally the processed Shrimp will be sold to an Italian Importer. 
+
+![Scenario 1 Image](https://i.ibb.co/VM0kzn5/Screenshot-2021-02-22-213255.png)
+
+*(The arrows represent the flow of traceability data between the trading parties in the scenario.)*
+
+This scenario involves a Farm, Processor, and Importer in the supply chain. The Event order will go as such:
+1.	Farm Harvest – Shrimp is harvested at the Shrimp Farm
+2.	Receive – Shrimp is sold from the farmer to the processing plant and received at the processing plant.
+3.	Commingling – Shrimp is commingled with other received Shrimp from other Shrimp Farms.
+4.	Processing – The shrimp is then peeled, put into cases, and frozen.
+5.	Ship – The shrimp is sold to an Italian importer and shipped to them.
+6.	Receive – The Italian Importer receives the shrimp.
+
+### Group 2 - Wild Caught Tuna
+*OpenSC, GoChain, and Plumensoft*
+
+This scenario will follow Tuna being caught off the coast of California by several fisherman. That tuna is then sold to a Tuna Company in San Diego. That Tuna Company then will ship the tuna to a processor in Thailand for the Tuna to be processed into cans. The processed cans of tuna will then be shipped back to and imported by the Tuna Company in San Diego to be sold to retailers in the United States.
+
+![Scenario 2 Image](https://i.ibb.co/vL1k5V3/Screenshot-2021-02-22-213642.png)
+
+*(The arrows represent the flow of traceability data between the trading parties in the scenario.)*
+
+This scenario involves a Vessel, Tuna Distributor, and Processor. The event order will go as such:
+1.	Fishing Event – Tuna is fished up by the vessel off the coast of California.
+2.	Offload – The tuna is sold to the Tuna Distributor at the port of San Diego
+3.	Ship – The tuna is sold to the Processor in Thailand and shipped from San Diego to there.
+4.	Receive – The tuna is received in Thailand.
+5.	Processing – The tuna is processed by the processor in Thailand into cans of tuna.
+6.	Ship – The tuna is sold back to the Tuna Distributor and shipped to them.
+7.	Receive – The tuna is received by the Tuna Distributor.
+
 
