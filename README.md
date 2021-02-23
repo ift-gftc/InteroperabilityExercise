@@ -110,6 +110,8 @@ https://discord.gg/QaWFMEa6
     - This is the source code to the Trawler Library that converts CSV into EPCIS XML. It is a Node Module.
 - [IT Co-Mapping Tool](https://ift-gftc.github.io/IT-Conversion-Mapping-Tool/)
     - This is a micro-web application that allows you to use a diagram tool for laying out events and exporting them to EPCIS XML.
+- [Interoperability Exercise Dropbox](https://www.dropbox.com/sh/lwwyp4dbu98s04w/AAA6yxaH6mvBTuHwA0JmjzI9a?dl=0)
+    - This is a github with some documentation that we have put together for this event.
         
 ## Scenarios
 
