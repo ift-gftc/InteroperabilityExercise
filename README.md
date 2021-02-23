@@ -71,8 +71,7 @@ This would be the final day in which each group would be given 15 minutes to pre
     -	Roadmap to implementation
     -	How would you use the GDST tools?
 -	Difficulties
--	Share with the XML that they were sharing (put in the dropbox)
--	Screenshots/demo 
+-	Screenshots/demo/resulting data
 
 ## Communication Channels
 We have gone ahead and setup both a Discord and a Slack channel available to be used by the groups. However, it is up to each team to determine which communication channels will work best for them.
