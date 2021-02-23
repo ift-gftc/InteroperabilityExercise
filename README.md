@@ -82,6 +82,8 @@ https://discord.gg/QaWFMEa6
 *Discord is great since it has built-in voice channels.*
 
 ### Slack
+**Invite Link:** https://join.slack.com/t/gdst-workspace/shared_invite/zt-8qm44to6-rmN53swOgv2AXNKCZw_IGg
+
 **Group 1:** https://gdst-workspace.slack.com/archives/C01NSKVA230
 
 **Group 2:** https://gdst-workspace.slack.com/archives/C01NSKW29AS
