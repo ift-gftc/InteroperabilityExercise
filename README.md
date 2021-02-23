@@ -59,7 +59,8 @@ At the end of the 3rd day, each group would submit a presentation to the event o
 
 This would be the final day in which each group would be given 15 minutes to present. They would have 5 minutes to present, and 10 minutes for questions. Depending on the number of groups, the meeting would last up to 2 hours. 
 
-**Prentiation Element**
+**Proposed Presentation Elements**
+-	Scenario
 -	Define the technical workflow
     -	Utilize the XML files as examples
     -	Communication and standard protocols proposed
@@ -69,7 +70,6 @@ This would be the final day in which each group would be given 15 minutes to pre
         -	OpenAPI
     -	Roadmap to implementation
     -	How would you use the GDST tools?
--	Scenario
 -	Difficulties
 -	Share with the XML that they were sharing (put in the dropbox)
 -	Screenshots/demo 
