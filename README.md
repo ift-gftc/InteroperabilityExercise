@@ -89,13 +89,20 @@ https://discord.gg/QaWFMEa6
 
 ## Resources
 - [Core Normative Standard](http://traceability-dialogue.org/wp-content/uploads/2020/03/2020.03.11_GDST1.0CoreNormativeStandardsfinalMAR13.pdf)
+    - This is the standard documentation for the GDST standard. 
 - [Technical Implementation Guide](http://traceability-dialogue.org/wp-content/uploads/2020/03/2020.03.11_GDST1.0TechnicalImplementationGuidancefinalMAR13.pdf)
+    - This is a document that talks about more technical guidance around the GDST standard.
 - [Developer Documentation](https://developer.traceability-dialogue.org/)
+    - This is some additional documentation put together by the technical team to help developers adopt the GDST Standard.
 - [Developer GitHub](https://github.com/ift-gftc/doc.gdst)
+    - This is the GitHub that hosts the developer documentation.
 - [Trawler Rest API GitHub](https://github.com/DuckScapePhilip/TrawlerAPI)
+    - This is a GitHub that talks about how to access a temporary REST API to use the Trawler API that converts CSV data into EPCIS XML.
 - [Trawler Source Code](https://github.com/ift-gftc/gftcms/tree/master/packages/trawler)
+    - This is the source code to the Trawler Library that converts CSV into EPCIS XML. It is a Node Module.
 - [IT Co-Mapping Tool](https://ift-gftc.github.io/IT-Conversion-Mapping-Tool/)
-
+    - This is a micro-web application that allows you to use a diagram tool for laying out events and exporting them to EPCIS XML.
+        
 ## Scenarios
 
 ### Group 1 - Farmed Shrimp
