@@ -73,6 +73,13 @@ This would be the final day in which each group would be given 15 minutes to pre
 -	Difficulties
 -	Screenshots/demo/resulting data
 
+## What is GDST interested in learning from this?
+We are very excited to see solution providers try to interoperate. Some questions we are looking to answer are:
+1. Is there any static data that we need to standardize?
+2. How will master data be communicated?
+3. Are there any master data KDEs critical to interoperability that are not supported by GDST or GS1?
+4. Will there be any ASn's involved in external traceability integration worflows?
+
 ## Communication Channels
 We have gone ahead and setup both a Discord and a Slack channel available to be used by the groups. However, it is up to each team to determine which communication channels will work best for them.
 
@@ -127,7 +134,7 @@ This scenario involves a Farm, Processor, and Importer in the supply chain. The 
 There is example XML for this scenario in the Group 1 folder of this GitHub. This XML can be uploaded to the IT-Co Mapping tool to visualize the event data.
 
 ### Group 2 - Wild Caught Tuna
-*OpenSC, GoChain, and Plumensoft*
+*OpenSC, GoChain, and Plumensoft Marina*
 
 This scenario will follow Tuna being caught off the coast of California by several fisherman. That tuna is then sold to a Tuna Company in San Diego. That Tuna Company then will ship the tuna to a processor in Thailand for the Tuna to be processed into cans. The processed cans of tuna will then be shipped back to and imported by the Tuna Company in San Diego to be sold to retailers in the United States.
 
